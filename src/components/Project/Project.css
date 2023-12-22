@@ -1,0 +1,108 @@
+.project_main {
+    width: 100vw;
+    background-color: #b45f5f;
+}
+.laptop_cont {
+    position: relative;
+}
+.visit_web {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 2px solid black;
+    padding: 0 10px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.visit_web1 {
+    left: 100px;
+}
+.visit_web2 {
+    right: 100px;
+}
+.visit_web:hover {
+    color: #fff;
+    background-color: black;
+    transition: all 0.6s ease;
+}
+.project_canvas {
+    background-color: #ffffff;
+    /* background: url("../../assets/tech_bg.jpg"); */
+    background-size:contain;
+    height: 90vh;
+}
+.case_study {
+    width: 100vw;
+    /* background: linear-gradient(white,black); */
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 200px;
+}
+.case_study h1 {
+    font-size: 100px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+.case_study p {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    max-width: 80%;
+    line-height: 2;
+}
+
+@media screen and (max-width: 768px) {
+
+    .laptop_cont {
+        position: relative;
+    }
+    .visit_web {
+        position: absolute;
+        top: 85%;
+        transform: translateY(-50%);
+        border: 2px solid black;
+        padding: 0 10px;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+    }
+    .visit_web h1 {
+        font-size: 15px;
+    }
+    .visit_web1 {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .visit_web2 {
+        display: none;
+        right: 100px;
+    }
+    .visit_web:hover {
+        color: #fff;
+        background-color: black;
+        transition: all 0.6s ease;
+    }
+    Canvas {
+        height: 80vh;
+    }
+    .case_study {
+        padding-bottom: 50px;
+    }
+    .case_study h1 {
+        font-size: 70px;
+        margin: 0;
+        margin-top: 10px;
+    }
+    .case_study p {
+        font-size: 20px;
+        max-width: 90%;
+        line-height: 1.5;
+    }
+}
