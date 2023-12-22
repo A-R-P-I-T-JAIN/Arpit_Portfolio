@@ -199,6 +199,7 @@ const Hero = () => {
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
              src={logo} alt="" />
+             <div className="scroll_help"></div>
             <h3>Hii,</h3>
             <h2 
             onMouseEnter={handleMouseEnter}

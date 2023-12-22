@@ -84,6 +84,7 @@ const Project = () => {
           size="3x"
           />
         </div>
+        <div className="scroll_help"></div>
       </div>
       <div className="case_study">
         <h1>About</h1>
