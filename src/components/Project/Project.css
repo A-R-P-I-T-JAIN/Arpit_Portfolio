@@ -16,6 +16,7 @@
     align-items: center;
     gap: 10px;
     cursor: pointer;
+    z-index: 100;
 }
 .visit_web1 {
     left: 100px;
