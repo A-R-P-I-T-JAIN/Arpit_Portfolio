@@ -188,7 +188,7 @@ const Hero = () => {
             }}
             className="hero_canvas"
           >
-            <OrbitControls enableZoom={false} />
+            {window.innerWidth > 768 && <OrbitControls enableZoom={false} />}
             <directionalLight />
             <pointLight position={[-30, 0, -30]} power={10.0} />
             <PointCircle />
@@ -199,7 +199,7 @@ const Hero = () => {
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
              src={logo} alt="" />
-             <div className="scroll_help"></div>
+             {/* <div className="scroll_help"></div> */}
             <h3>Hii,</h3>
             <h2 
             onMouseEnter={handleMouseEnter}

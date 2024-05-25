@@ -7,6 +7,7 @@ import { faJs } from "@fortawesome/free-brands-svg-icons";
 import { faLeaf } from "@fortawesome/free-solid-svg-icons";
 import { faJava } from "@fortawesome/free-brands-svg-icons";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
+import { faCaretUp } from '@fortawesome/free-solid-svg-icons';
 import { gsap } from "gsap";
 import Tech from "./Tech";
 import { useGSAP } from '@gsap/react';
@@ -76,6 +77,7 @@ const TechStack = () => {
           {/* <div className="center"> */}
             <div className="t">
               <Tech head="React" icon={faReact} color="#005eff" />
+              <Tech head="NextJs" icon={faCaretUp} color="#005eff" />
               <Tech head="Node" icon={faNode} color="black" />
               <Tech head="Html" icon={faHtml5} color="salmon" />
               <Tech head="Css" icon={faCss3} color="#005eff" />

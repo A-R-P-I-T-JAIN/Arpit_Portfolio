@@ -4,33 +4,22 @@ import { gsap } from "gsap";
 import first from "../../assets/first.png"
 import second from "../../assets/second.png"
 import third from "../../assets/third.png"
+import fourth from "../../assets/fourth.png"
+import fifth from "../../assets/fifth.png"
 import { Link } from 'react-router-dom';
-import Expense_Splitter from '../../../public/Expense_splitter'
-import Ecommerce from "../../../public/Ecommerce"
-import Quizwiz from "../../../public/Quizwiz"
 
 const Projects = () => {
 
-  const expense_splitter_about = `Expense Splitter, a cutting-edge application developed on the MERN
-  (MongoDB, Express.js, React.js, Node.js) stack with the integration of
-  Socket.io for real-time capabilities, revolutionizes the landscape of
-  group expense management. This robust platform enables users to
-  effortlessly create rooms for distinct events, fostering seamless
-  communication and collaboration. Hosts, equipped with the ability to
-  add new members effortlessly, initiate dynamic conversations within
-  the application's real-time chat feature. The application's core
-  functionality lies in its automated expense tracking and calculation
-  system, ensuring accurate and fair distribution of costs among group
-  members. The platform's scalable architecture allows for the addition
-  of new members and the creation of multiple rooms, accommodating
-  diverse user scenarios. In essence, Expense Splitter goes beyond the
-  conventional boundaries of expense-sharing applications, providing a
-  comprehensive, user-friendly solution that enhances transparency,
-  efficiency, and financial coordination within groups.`
+  const expense_splitter_about = `Expense Splitter is a state-of-the-art MERN stack application with Socket.io integration for real-time capabilities, revolutionizing group expense management. Users can create event-specific rooms, effortlessly add members, and engage in dynamic real-time chats. Its automated expense tracking ensures fair cost distribution, making it a comprehensive, user-friendly solution for transparent and efficient financial coordination in groups.`
 
-  const ecommerce_about = `The eCommerce website is a robust and dynamic platform built on the MERN (MongoDB, Express.js, React.js, Node.js) stack, showcasing a seamless digital shopping experience. Users can effortlessly explore, filter, and paginate through a diverse range of digital items, with the ability to add products to their cart or proceed with secure transactions. The website incorporates user registration and login features for personalized interactions. On the administrative side, the MERN stack empowers administrators to efficiently manage the digital inventory by adding or removing products, overseeing user accounts, and handling order management, including the capability to accept or dismiss transactions. This technology stack ensures a scalable, high-performance, and responsive eCommerce solution, combining the power of MongoDB for flexible data storage, Express.js for robust server-side development, React.js for an interactive user interface, and Node.js for efficient server-side scripting. The result is a feature-rich, user-friendly, and secure eCommerce platform that elevates the digital shopping experience.`
+  const ecommerce_about = `The eCommerce website, built on the MERN stack, offers seamless shopping with user-friendly features like product browsing, secure transactions, and personalized interactions. Administrators can efficiently manage inventory and orders, ensuring scalability and security. This robust platform combines MongoDB, Express.js, React.js, and Node.js for a feature-rich, responsive experience.
+  `
 
-  const quizwiz_about = `QuizWiz stands as an engaging and knowledge-enhancing platform built with HTML, CSS, and React, seamlessly integrating with the Open Trivia API. Offering an extensive array of quizzes spanning diverse topics such as politics, sports, entertainment, general knowledge, science, and more, the website provides users with an interactive and educational experience. Players can delve into quizzes tailored to their interests, with responsive design ensuring an optimal user experience. Leveraging HTML and CSS for structure and style, and JavaScript and React for dynamic functionality, QuizWiz delivers a captivating environment for users to test and augment their knowledge. The integration of the Open Trivia API enriches the content, providing a vast repository of questions across multiple categories. With this tech stack, QuizWiz epitomizes a harmonious blend of user-friendly design and cutting-edge technology, fostering an enjoyable and intellectually stimulating quiz-playing journey.`
+  const quizwiz_about = `QuizWiz, built with HTML, CSS, and React, seamlessly integrates the Open Trivia API for diverse quizzes. Users enjoy an interactive experience with responsive design and dynamic functionality, fostering an enjoyable and educational journey.`
+
+  const docx_about = `Docx, MERN stack web project simplifies document creation and customization, offering collaborative features for seamless teamwork. Users can effortlessly create and personalize documents while collaborating with friends in real-time. With MongoDB, Express.js, React.js, and Node.js, this platform ensures a smooth, efficient, and interactive document creation experience.`
+
+  const stream_about = `Incorporating Next.js, Stream revolutionizes group meetings and video calls with seamless integration of ZegoCloud UI. Experience enhanced collaboration with intuitive features for scheduling, joining, and hosting meetings. Next.js ensures optimal performance, while ZegoCloud's robust functionality elevates the user experience for efficient and engaging virtual meetings.`
 
 
     useGSAP(() => {
@@ -85,17 +74,33 @@ const Projects = () => {
             <Link  to="/project" state={{
               link: "https://main--expensplitter.netlify.app/",
               about: expense_splitter_about,
-              model: 1
+              github: "https://github.com/A-R-P-I-T-JAIN/Expense-Splitter",
+              head: "Expense Splitter",
+              image: first
             }} style={{textDecoration: "none"}}>
             <div className="proj proj1">
               <img src={first} alt="" />
               <h1>Expense Splitter</h1>
             </div>
             </Link>
+            <Link  to="/project" state={{
+              link: "https://docxx-tawny.vercel.app/",
+              about: docx_about,
+              github: "https://github.com/A-R-P-I-T-JAIN/docX",
+              head: "Docx",
+              image: fourth
+            }} style={{textDecoration: "none"}}>
+            <div className="proj proj1">
+              <img src={fourth} alt="" />
+              <h1>Docx</h1>
+            </div>
+            </Link>
             <Link to="/project" state={{
               link: "https://clumsy-poncho-tick.cyclic.app/",
               about: ecommerce_about,
-              model: 2
+              github: "https://github.com/A-R-P-I-T-JAIN/Ecommerce-app",
+              head: "Ecommerce",
+              image: second
             }} style={{textDecoration: "none"}} >
             <div className="proj proj2">
               <img src={second} alt="" />
@@ -105,13 +110,28 @@ const Projects = () => {
             <Link to="/project" state={{
               link: "https://quiz-wizzz.netlify.app/",
               about: quizwiz_about,
-              model: 3
+              github: "https://github.com/A-R-P-I-T-JAIN/quizwiz",
+              head: "Quizz Wizz",
+              image: third
             }} style={{textDecoration: "none"}} >
             <div className="proj proj3">
               <img src={third} alt="" />
               <h1>Quizz Wizz</h1>
             </div>
             </Link>
+            <Link to="/project" state={{
+              link: "https://stream-five-iota.vercel.app/",
+              about: stream_about,
+              github: "https://github.com/A-R-P-I-T-JAIN/stream",
+              head: "Stream",
+              image: fifth
+            }} style={{textDecoration: "none"}} >
+            <div className="proj proj3">
+              <img src={fifth} alt="" />
+              <h1>Stream</h1>
+            </div>
+            </Link>
+            
           </div>
         </div>
   )
